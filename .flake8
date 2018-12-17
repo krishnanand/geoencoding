@@ -1,0 +1,11 @@
+[flake8]
+max-line-length=80
+include=encoding/
+exclude =
+    **/migrations/*,
+    env/**,
+    geoencoding/settings.py,
+    **/__pycache__/**,
+    **/migrations/**
+    manage.py
+max-complexity = 10

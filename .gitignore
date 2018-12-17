@@ -1,0 +1,12 @@
+.DS_Store
+env
+**/__pycache__
+**/db.sqlite3
+**/.pytest_cache/
+**/.coverage
+html_coverage_report
+**/*.pyc
+# Contains the API keys.
+**/api_keys.py
+# Cassettes have the API data
+**/test_data/vcr_cassettes

@@ -1,0 +1,23 @@
+[paths]
+source=encoding/
+
+[run]
+branch = True
+
+[report]
+omit=
+    **/tests/**
+    **/env/**
+    manage.py
+    **/migrations/**
+    encoding/api_keys.py
+exclude_lines =
+  def __repr__
+  raise NotImplementedError
+
+[tool:pytest]
+addopts=--cov=encoding --cov-report html
+
+[html]
+directory=html_coverage_report
+title="Geocoding Project"
